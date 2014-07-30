@@ -14,6 +14,10 @@ task :setup => :environment do
   queue  %[echo "-----> Be sure to edit 'shared/.env'."]
 end
 
+task :restart => :environment do
+  queue "touch #{deploy_to}/tmp/restart.txt"
+end
+
 desc "Deploys the current version to the server."
 task :deploy => :environment do
   deploy do
@@ -22,7 +26,7 @@ task :deploy => :environment do
     invoke :'bundle:install'
 
     to :launch do
-      queue "touch #{deploy_to}/tmp/restart.txt"
+      invoke :restart
     end
   end
 end
