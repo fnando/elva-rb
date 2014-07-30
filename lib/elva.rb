@@ -2,6 +2,7 @@ ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
 require 'bundler/setup'
 require 'socket'
 require 'logger'
+require 'ostruct'
 require 'i18n'
 require 'aitch'
 
@@ -10,6 +11,7 @@ require_relative 'elva/handlers/base'
 
 require_relative 'elva/handlers/gem'
 require_relative 'elva/handlers/gist'
+require_relative 'elva/handlers/github'
 require_relative 'elva/handlers/google'
 require_relative 'elva/handlers/help'
 require_relative 'elva/handlers/karma'

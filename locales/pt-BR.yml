@@ -24,3 +24,8 @@ pt-BR:
     lose: '%{nickname} perdeu um ponto (karma: %{level})'
     best: 'Melhor karma: %{list}'
     worst: 'Pior karma: %{list}'
+
+  github:
+    works_for: 'trabalha para %{company}'
+    repo_not_found: 'O repositório %{username}/%{repo} não existe (ou é privado)'
+    user_not_found: 'O usuário %{username} não existe'

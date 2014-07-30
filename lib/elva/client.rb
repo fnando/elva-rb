@@ -24,7 +24,7 @@ module Elva
       say "USER #{nickname} 0 * #{nickname.capitalize}"
 
       socket.gets
-      say "PRIVMSG NickServ :IDENTIFY #{password}"
+      say "PRIVMSG NickServ :IDENTIFY #{password}" if password
 
       channels.each do |channel|
         socket.gets

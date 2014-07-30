@@ -29,6 +29,12 @@ Decrease karma points
 
 !karma
 Show karma score
+
+!gh <username>
+Show info about user, with link to the Github profile
+
+!gh <username>/<repository>
+Show info about repo, with to the project
 ```
 
 ## License

@@ -2,5 +2,5 @@
 require File.expand_path('../../lib/elva', __FILE__)
 
 Elva::Client
-  .new(ENV.fetch('CHANNELS').split(','), ENV.fetch('NICKNAME'), ENV.fetch('PASSWORD'))
+  .new(ENV.fetch('CHANNELS').split(','), ENV.fetch('NICKNAME'), ENV['PASSWORD'])
   .run
