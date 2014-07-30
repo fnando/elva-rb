@@ -1,0 +1,26 @@
+pt-BR:
+  use_gist: |
+    Por favor, mande seu código como um gist. https://gist.github.com
+
+  rubygems_search: |
+    Veja os resultados de %{name} em %{url}
+
+  rubygems_details: |
+    %{name}: %{info} ~ %{project_uri}
+
+  npm_search: |
+    Veja os resultados de %{name} em %{url}
+
+  npm_details: |
+    %{name}: %{description} ~ %{project_uri}
+
+  count_users:
+    zero: Nenhum usuário conectado
+    one: 1 usuário conectado
+    other: '%{count} usuários conectados'
+
+  karma:
+    gain: '%{nickname} ganhou um ponto (karma: %{level})'
+    lose: '%{nickname} perdeu um ponto (karma: %{level})'
+    best: 'Melhor karma: %{list}'
+    worst: 'Pior karma: %{list}'
