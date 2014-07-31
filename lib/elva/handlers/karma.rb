@@ -10,7 +10,7 @@ module Elva
       end
 
       def match?
-        _, @operator = *message.match(/([+-]{2})/)
+        _, @operator = *content.match(/[^ ](([+-])\2)(\s|\z)/)
         @stats = content.to_s.match(/\A!karma/)
         @operator || @stats
       end
@@ -30,13 +30,13 @@ module Elva
       end
 
       def stats_for_worst(karma)
-        return unless karma.size.nonzero?
+        return if karma.empty?
         worst = karma.sort_by {|(nickname, score)| score }[0, 3]
         broadcast t('karma.worst', list: format(worst))
       end
 
       def stats_for_best(karma)
-        return unless karma.size.nonzero?
+        return if karma.empty?
         best = karma.sort_by {|(nickname, score)| score }.reverse[0, 3]
         broadcast t('karma.best', list: format(best))
       end

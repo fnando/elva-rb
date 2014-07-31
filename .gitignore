@@ -1,2 +1,3 @@
 *.pstore
 .env
+*.swp

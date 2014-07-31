@@ -20,22 +20,25 @@ GEM
       thor (~> 0.19.1)
     i18n (0.6.11)
     json (1.8.1)
+    metaclass (0.0.4)
     method_source (0.8.2)
     mini_portile (0.6.0)
     minitest (5.4.0)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
-    pry (0.9.12.6)
-      coderay (~> 1.0)
-      method_source (~> 0.8)
+    pry (0.10.0)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
       slop (~> 3.4)
     pry-meta (0.0.9)
       awesome_print
       pry
       pry-nav
       pry-remote
-    pry-nav (0.2.3)
-      pry (~> 0.9.10)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
     pry-remote (0.1.8)
       pry (~> 0.9)
       slop (~> 3.0)
@@ -52,4 +55,7 @@ DEPENDENCIES
   aitch
   foreman
   i18n
+  minitest (~> 5.4.0)
+  mocha (~> 1.1.0)
+  nokogiri (= 1.6.2.1)
   pry-meta
