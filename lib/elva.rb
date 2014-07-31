@@ -18,6 +18,7 @@ require_relative 'elva/handlers/karma'
 require_relative 'elva/handlers/npm'
 require_relative 'elva/handlers/ping'
 require_relative 'elva/handlers/tell'
+require_relative 'elva/handlers/tweet'
 
 I18n.enforce_available_locales = false
 I18n.default_locale = ENV.fetch('LOCALE', :en)

@@ -37,6 +37,10 @@ Show info about user, with link to the Github profile
 Show info about repo, with to the project
 ```
 
+## URL processors:
+
+- Tweet urls
+
 ## License
 
 (The MIT License) Nando Vieira, 2014

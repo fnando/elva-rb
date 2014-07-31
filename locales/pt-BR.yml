@@ -29,3 +29,6 @@ pt-BR:
     works_for: 'trabalha para %{company}'
     repo_not_found: 'O repositório %{username}/%{repo} não existe (ou é privado)'
     user_not_found: 'O usuário %{username} não existe'
+
+  tweet:
+    not_found: Esse tweet não existe mais!
