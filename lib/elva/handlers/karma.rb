@@ -85,7 +85,7 @@ module Elva
       end
 
       def user
-        @user ||= message[/(?:([a-z0-9-_]+)[+-]{2})/, 1]
+        @user ||= message[/(?:([a-z0-9-_]+)[+-]{2})/i, 1]
       end
     end
   end
