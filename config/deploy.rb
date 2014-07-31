@@ -4,7 +4,7 @@ require 'mina/git'
 set :domain, 'hellobits.com'
 set :deploy_to, '/var/www/elva'
 set :user, 'deploy'
-set :repository, 'git@codeplane.com:fnando/elva-rb.git'
+set :repository, 'git@github.com:fnando/elva-rb.git'
 set :branch, 'master'
 
 set :shared_paths, ['.env']
