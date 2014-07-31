@@ -10,7 +10,7 @@ module Elva
       end
 
       def match?
-        _, @operator = *content.match(/[^ ](([+-])\2)(\s|\z)/)
+        _, @operator = *content.to_s.match(/[^ ](([+-])\2)(\s|\z)/)
         @stats = content.to_s.match(/\A!karma/)
         @operator || @stats
       end
