@@ -22,8 +22,7 @@ module Elva
 
       def send_stats
         store.transaction(true) do
-          store[:karma] ||= {}
-          karma = store[:karma].to_a
+          karma = (store[:karma] || {}).to_a
 
           stats_for_best(karma)
           stats_for_worst(karma)
