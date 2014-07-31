@@ -36,6 +36,10 @@ describe 'Karma' do
       handle_message('samflores--').operator.must_equal '--'
     end
 
+    it "detached operator" do
+      handle_message('samflores --').operator.must_equal nil
+    end
+
     it "understands CamelCase names" do
       handle_message("InfoSlack++")
       handler.operator.must_equal '++'
