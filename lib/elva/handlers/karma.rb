@@ -10,7 +10,7 @@ module Elva
       end
 
       def match?
-        _, @operator = *message.match(/([+-]{2})/)
+        _, @operator = *content.match(/[^ ](([+-])\2)(\s|\z)/)
         @stats = content.to_s.match(/\A!karma/)
         @operator || @stats
       end
@@ -84,7 +84,7 @@ module Elva
       end
 
       def user
-        @user ||= message[/(?:([a-z0-9-_]+)[+-]{2})/i, 1]
+        @user ||= message[/(?:([a-z0-9_-]+)[-+]{2})/i, 1]
       end
     end
   end
