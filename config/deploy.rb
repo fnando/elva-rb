@@ -3,9 +3,10 @@ require 'mina/git'
 
 set :domain, 'hellobits.com'
 set :deploy_to, '/var/www/elva'
-set :user, 'deploy'
+set :user, 'www-data'
 set :repository, 'git@github.com:fnando/elva-rb.git'
 set :branch, 'master'
+set :forward_agent, true
 
 set :shared_paths, ['.env']
 
